@@ -7,7 +7,8 @@ const jsonLd = {
   name: "AP Digital",
   description:
     "Digital marketing agency serving Burnaby, BC businesses with Meta Ads, Google Ads, and social media marketing.",
-  url: "https://ap-digital.ca/burnaby",
+  "@id": "https://burnaby.ap-digital.ca/",
+  url: "https://burnaby.ap-digital.ca/",
   telephone: "+1-778-682-5772",
   email: "apdigital.core@gmail.com",
   address: {
@@ -28,7 +29,7 @@ const Burnaby = () => {
           name="description"
           content="AP Digital helps Burnaby businesses get more leads with Meta Ads, Google Ads & social media. Serving trades, salons, realtors & coaches in Burnaby, BC. No contracts."
         />
-        <link rel="canonical" href="https://ap-digital.ca/burnaby" />
+        <link rel="canonical" href="https://burnaby.ap-digital.ca/" />
         <meta
           property="og:title"
           content="Digital Marketing Agency Burnaby BC | AP Digital"
@@ -37,7 +38,7 @@ const Burnaby = () => {
           property="og:description"
           content="AP Digital helps Burnaby businesses get more leads with Meta Ads, Google Ads & social media. Serving trades, salons, realtors & coaches in Burnaby, BC. No contracts."
         />
-        <meta property="og:url" content="https://ap-digital.ca/burnaby" />
+        <meta property="og:url" content="https://burnaby.ap-digital.ca/" />
         <meta property="og:type" content="website" />
         <meta
           name="twitter:title"

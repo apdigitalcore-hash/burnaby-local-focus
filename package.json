@@ -6,11 +6,18 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "postbuild": "react-snap || echo 'Pre-rendering skipped'",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest"
+  },
+  "reactSnap": {
+    "source": "dist",
+    "minifyHtml": { "collapseWhitespace": false, "removeComments": false },
+    "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"],
+    "include": ["/"]
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
